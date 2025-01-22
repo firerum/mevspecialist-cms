@@ -6,7 +6,11 @@ export default [
         name: 'strapi::cors',
         config: {
             enabled: true,
-            origin: ['https://www.mevspecialistcare.com', 'https://mevspecialistcare.com'],
+            origin: [
+                'https://www.mevspecialistcare.com',
+                'https://mevspecialistcare.com',
+                'http://localhost:3000',
+            ],
             headers: ['*'],
             methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
         },
